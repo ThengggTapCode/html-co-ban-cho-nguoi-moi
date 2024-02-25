@@ -1,0 +1,93 @@
+/* Màu nền */
+body {
+  background-color: #3a0ca3;
+}
+/* Ảnh coder */
+img#anh_lap_trinh_vien {
+  width: 400px;
+  border-radius: 5px;
+}
+
+/* Ảnh minh họa HTML */
+img#anh_minh_hoa_html {
+  width: 500px;
+  border-radius: 5px;
+}
+
+/* Ảnh minh họa vai trò của html/css/js */
+img#vai_tro_html_css_js {
+  width: 350px;
+  border-radius: 5px;
+}
+
+/* Ảnh output */
+img.output {
+  border-radius: 5px;
+}
+
+/* Thẻ code nằm trong thẻ h2 */
+h2 code {
+  font-weight: lighter;
+}
+
+/* Các dòng Output */
+h3.output {
+  color: white;
+  font-family: "Cascadia Code", monospace;
+}
+
+/* Thẻ đoạn văn */
+p,
+ul li {
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Thẻ tiêu đề, mục chính */
+h1,
+h2,
+ol {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.thanh_dieu_huong {
+  display: inline-block;
+}
+
+nav a {
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+nav.thanh_dieu_huong a::before {
+  content: " ";
+  background-color: #fff;
+}
+
+/* Thẻ a khi di chuột qua */
+nav a:hover {
+  color: #3a0ca3;
+  background-color: white;
+  padding: 5px 10px;
+  transition: 100ms;
+}
+
+/* Drop down list */
+div.dropdoww-list {
+  position: relative;
+  display: inline-block;
+}
+/* Nội dung của drop down list */
+.dropdown-content {
+  display: none;
+  z-index: 1;
+}
+/* Thẻ cha khi di chuột qua sẽ hiện drop down content */
+.dropdoww-list:hover .dropdown-content {
+  display: block;
+}

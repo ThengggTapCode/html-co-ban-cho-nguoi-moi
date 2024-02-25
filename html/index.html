@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>HTML cơ bản cho người mới bắt đầu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+
+  <!-- Tiêu đề -->
+  <header>
+    <div class="tieu_de">
+      <h1 class="tieu_de">HTML cơ bản cho người mới bắt đầu</h1>
+    </div>
+  </header>
+
+  <hr />
+  <!-- Nội dung chính -->
+  <main>
+    <section class="mo_dau">
+    <!-- Mở đầu -->
+    <div class="mo_dau">
+      <p class="mo_dau">
+        Bạn quyết định học lập trình để tạo ra một website nhưng lại không có
+        kiến thức về lập trình hoặc không biết bắt đầu từ đâu?
+      </p>
+
+      <img
+        id="anh_lap_trinh_vien"
+        src="/img/web-developer-3.jpg"
+        alt="Ảnh 1 lập trình viên"
+      />
+      <p class="mo_dau">
+        Nhưng đừng lo! Chúng mình ở đây để giúp bạn đến với con đường trở thành
+        một lập trình viên chuyên nghiệp. Vì thế, chúng ta hãy cùng nhau tìm
+        hiểu về HTML nhé!
+      </p>
+    </div>
+    </section>
+
+    <hr>
+    
+    <section class="thanh_dieu_huong">
+    <!-- Thanh điều hướng -->
+    <div class="thanh_dieu_huong">
+      <nav class="thanh_dieu_huong">
+        <h2>Mục lục:</h2>
+
+        <!-- Giới thiệu -->
+        <a href="#gioithieu">Giới thiệu về HTML</a> <br> <br></li>
+  
+        <!-- Cấu trúc HTML -->
+        <a href="#cautruc">Cấu trúc cơ bản của HTML</a> <br> <br>
+
+        <div class="dropdoww-list">
+
+          <!-- Các thẻ cơ bản -->
+          <a href="#thecoban">Các thẻ cơ bản trong HTML</a> <br> <br>
+  
+          <div class="dropdown-content">
+
+            <ol type="1">
+              <!-- Thẻ tiêu đề -->
+              <li><a href="#thetieude">Thẻ tiêu đề</a> <br> <br></li>
+      
+              <!-- Thẻ đoạn văn -->
+              <li><a href="#thedoanvan">Thẻ đoạn văn</a> <br> <br></li>
+      
+              <!-- Thẻ in đậm --> 
+              <li><a href="#indam">Thẻ in đậm</a> <br> <br></li>
+      
+              <!-- Thẻ in nghiêng -->
+              <li><a href="#innghieng">Thẻ in nghiêng</a> <br> <br></li>
+      
+              <!-- Thẻ gạch chân -->
+              <li><a href="#gachchan">Thẻ gạch chân</a> <br> <br></li>
+
+              <!-- Thẻ div -->
+              <li><a href="#thediv">Thẻ div</a> <br> <br></li>
+            </ol>
+          </div>
+        </div>
+
+        <br>
+
+        <!-- Id và class -->
+        <a href="#idvaclass">ID và class</a>
+      </nav>
+    </div>
+    </section>
+
+    <hr />
+
+   <section class="noi_dung_trong_muc_luc">
+      <section class="gioi_thieu_html">
+      <!-- Giới thiệu về HTML -->
+      <div class="gioi_thieu_html">
+          <h2 id="gioithieu">HTML là gì?</h2>
+    
+          <img id="anh_minh_hoa_html" src="/img/thumb-5.jpg" alt="" />
+    
+          <p class="gioi_thieu_html">
+            HTML là ngôn ngữ đánh dấu siêu văn bản, dùng để tạo và cấu trúc các
+            trang web trên World Wide Web. HTML không phải là ngôn ngữ lập trình, mà
+            chỉ là ngôn ngữ định dạng, dùng các thẻ và thuộc tính để biểu thị cách
+            hiển thị nội dung của trang. HTML có nhiều phiên bản, phiên bản mới nhất
+            là HTML5, cung cấp nhiều tính năng mới và cải tiến cho các nhà phát
+            triển web.
+          </p>
+      </div>
+      </section>
+  
+     <br />
+
+     <section class="vai_tro_cua_html">
+        <div class="vai_tro_cua_html" >
+          <h2 class="vai_tro_cua_html" id="vaitrohtml">Vai trò của HTML trong lập trình web</h2>
+
+          <p class="vai_tro_cua_html">
+            Để có thể tạo ra 1 trang web có đủ 3 yếu tố: thân thiện với người dùng, bắt mắt và đầy đủ chức năng, chúng ta cần kết hợp
+            sử dụng linh hoạt 3 ngôn ngữ là HTML, CSS và JS (JavaScript). </p> 
+
+            <br>
+            
+            <img src="/img/1680955326122.png" alt="Vai trò của các ngôn ngữ HTML, CSS và JavaScript trong lập trình web" id="vai_tro_html_css_js">
+
+            <p class="vai_tro_cua_html">
+              Trong đó, HTML sẽ cung cấp cấu trúc cơ bản cho trang web, CSS sẽ đảm nhiệm vai trò về phần đồ họa, tức là chỉnh sửa bố cục, màu sắc, 
+              cỡ chữ, phông chữ, hình ảnh và các phần tử của HTML. Còn JS sẽ xử lí các hành vi,
+              tức là tương tác giữa người dùng với trang web hoặc xử lí, lưu trữ dữ liệu, v.v. <br> <br>
+              Tuy nhiên, bây giờ chúng ta chỉ cần tìm hiểu về HTML thôi, nên các bạn có thể tìm hiểu 2 ngôn ngữ kia sau! <br> <br>
+            </p>
+        </div>
+     </section>
+  
+      <section class="cau_truc_co_ban_html">
+    <!-- Cấu trúc cơ bản HTML -->
+    <div class="cau_truc_co_ban_html">
+        <h2 id="cautruc">Cấu trúc cơ bản của HTML?</h2>
+  
+        <p class="cau_truc_co_ban_html">
+          Trong mỗi file HTML, sẽ đều có 3 thành phần chính, gồm 3 thẻ: <br>
+          Thẻ <code class="language-html">&lt;html&gt;&lt;/html&gt;</code>, thẻ
+          <code class="language-html">&lt;head&gt;&lt;/head&gt;</code>, và thẻ
+          <code class="language-html">&lt;body&gt;&lt;/body&gt;</code>
+        </p>
+  
+        <p class="cau_truc_co_ban_html">Ví dụ về một cấu trúc cơ bản của HTML:</p>
+  
+        <p>
+          <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;...&lt;/head&gt;
+      &lt;body&gt;...&lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+  
+        </p>
+          
+        <p class="cau_truc_co_ban_html">
+          Mỗi thẻ bắt đầu với thẻ mở <code class="language-html">&lt;...&gt;</code>, kết thúc bằng thẻ
+          đóng <code class="language-html">&lt;/...&gt;</code>, nội dung của thẻ sẽ nằm ở giữa 2 thẻ
+          đóng và mở. <br>
+          Trong đó, mỗi thẻ có ý nghĩa như sau:
+        </p>
+  
+       <ul>
+  
+        <!-- Thẻ DOCTYPE html -->
+          <li>
+            <p class="cau_truc_co_ban_html">Thẻ khai báo loại tài liệu: <code class="language-html">&lt;!DOCTYPE html&gt;</code>. 
+              Thẻ này cho biết phiên bản HTML mà file sử dụng. <br></p>
+          </li>
+  
+        <!-- Thẻ html -->
+          <li>
+            <p class="cau_truc_co_ban_html">Thẻ mở và đóng tài liệu HTML: <code class="language-html">&lt;html&gt;&lt;/html&gt;</code>. 
+              Thẻ này bao quanh toàn bộ nội dung của file HTML, cho biết đây là một tài liệu HTML. <br></p>
+          </li>
+  
+        <!-- Thẻ head -->
+          <li>
+            <p class="cau_truc_co_ban_html">Thẻ mở và đóng phần thông tin website:<code class="language-html">&lt;head&gt;&lt;/head&gt;</code>. 
+              Thẻ này chứa các thông tin về website, như tiêu đề <br>
+              <code class="language-html">&lt;title&gt;&lt;/title&gt;</code>
+              , mã hóa ký tự <code class="language-html">&lt;meta charset=&quot;utf-8&quot;&gt;</code>,
+              liên kết tới các file CSS thông qua thẻ <code class="language-html">&lt;link&gt;&lt;/link&gt;</code>;
+              , JavaScript thông qua thẻ <code class="language-html">&lt;script&gt;&lt;/script&gt;</code>, v.v. <br></p>
+          </li>
+  
+        <!-- Thẻ body -->
+          <li>
+            <p class="cau_truc_co_ban_html">
+              Thẻ mở và đóng phần nội dung website: <code class="language-html">&lt;body&gt;&lt;/body&gt;</code>. 
+              Thẻ này chứa các thành phần hiển thị nội dung của website, như văn bản <code class="language-html">&lt;p&gt;&lt;/p&gt;</code>, 
+              hình ảnh <code class="language-html">&lt;img&gt;</code>, 
+              liên kết <code class="language-html">&lt;a&gt;&lt;/a&gt;</code>, biểu mẫu <code class="language-html">&lt;form&gt;&lt;/form&gt;</code>, 
+              bảng <code class="language-html">&lt;table&gt;&lt;/table&gt;</code>, 
+              danh sách <code class="language-html">&lt;ul&gt;&lt;/ul&gt;</code> hoặc <code class="language-html">&lt;ol&gt;&lt;/ol&gt;</code>, v.v.
+              Chúng ta sẽ code trong thẻ này.
+            </p>
+          </li>
+       </ul>
+  
+        <br />
+    </div>
+      </section>
+  
+      <br />
+  
+      <section class="cac_the_co_ban">
+    <!-- Các thẻ cơ bản HTML -->
+    <div class="cac_the_co_ban">
+      <h2 id="thecoban" class="cac_the_co_ban">Các thẻ cơ bản trong HTML</h2>
+  
+      <p class="cac_the_co_ban">Dưới đây sẽ là 1 số các thẻ cơ bản của HTML</p>
+  
+      <br>
+  
+      <!-- Thẻ h -->
+      <div class="the_h">
+        <h2 id="thetieude" class="the_h">
+          Thẻ tiêu đề: <code class="language-html">&lt;h1&gt;&lt;/h1&gt;</code>,
+          <code class="language-html">&lt;h2&gt;&lt;/h2&gt;</code>,... <br />
+        </h2>
+  
+          <br />
+  
+          <p>
+            <pre><code class="language-html">
+  &lt;!--Thẻ tiêu đề--&gt;
+  &lt;h1&gt;Đây là thẻ h1&lt;/h1&gt;
+  &lt;h2&gt;Đây là thẻ h2&lt;/h2&gt;
+  &lt;h3&gt;Đây là thẻ h3&lt;/h3&gt;
+  &lt;h4&gt;Đây là thẻ h4&lt;/h4&gt;
+  &lt;h5&gt;Đây là thẻ h5&lt;/h5&gt;
+  &lt;h6&gt;Đây là thẻ h6&lt;/h6&gt;
+            </code></pre>
+          </p>
+  
+          <h3 class="output">Output:</h3>
+          
+          <img src="/img/the_h1_in.png" alt="" class="output">
+  
+          <br>
+  
+        <p class="the_h">
+          Thẻ <code class="language-html">&lt;h&gt;&lt;/h&gt;</code> thường được sử dụng cho việc viết
+          1 tiêu đề hoặc đề mục. Có 6 thẻ h từ <code class="language-html">&lt;h1&gt;&lt;/h1&gt;</code> đến <code class="language-html">&lt;h6&gt;&lt;/h6&gt;</code>
+          , trong đó <code class="language-html">&lt;h1&gt;&lt;/h1&gt;</code> là thẻ có kích cỡ lớn nhất và thẻ <code class="language-html">&lt;h6&gt;&lt;/h6&gt;</code> 
+          là thẻ có kích cỡ nhỏ nhất. <br> <br> 
+          Thẻ h giúp cho người đọc và công cụ tìm kiếm nắm bắt được cấu trúc và nội dung chính của trang web. 
+          Thẻ h cũng có thể được định dạng bằng CSS để thay đổi kích thước, màu sắc, font chữ, v.v. của tiêu đề.
+        </p>
+      </div>
+  
+      <br />
+  
+      <!-- Thẻ p -->
+      <div class="the_p">
+        <h2 id="thedoanvan" class="the_p">Thẻ đoạn văn: <code class="language-html">&lt;p&gt;&lt;/p&gt;</code></h2>
+  
+        <br />
+  
+        <p>
+          <pre><code class="language-html">
+  &lt;!--Thẻ p hoặc strong dùng để viết 1 đoạn văn bản--&gt;
+  &lt;p&gt;
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, magnam? 
+  Culpa, sapiente reiciendis quidem molestiae incidunt,
+  quibusdam autem quia adipisci aperiam tempore ex veniam hic at 
+  officia soluta ducimus voluptate?
+  &lt;/p&gt;</code></pre>
+        </p>
+  
+        <h3 class="output">Output:</h3>
+  
+        <img src="/img/the_p_in.png" alt="" class="output">
+  
+        <br />
+  
+        <p class="the_p">
+          Thẻ <code class="language-html">&lt;p&gt;&lt;/p&gt;</code> được sử dụng để viết 1 đoạn văn
+          bản dài, ta có thể sử dụng các thẻ inline như thẻ <code class="language-html">&lt;a&gt;&lt;/a&gt;</code>, 
+          <code class="language-html">&lt;img&gt;&lt;/img&gt;</code>, 
+          <code class="language-html">&lt;span&gt;&lt;/span&gt;</code>, 
+          <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code>, 
+          <code class="language-html">&lt;em&gt;&lt;/em&gt;</code>, 
+          <code class="language-html">&lt;br&gt;&lt;/br&gt;</code>, v.v.
+        </p>
+      </div>
+  
+      <br />
+  
+      <!-- Thẻ in đậm -->
+      <div class="the_in_dam">
+        <h2 id="indam" class="the_in_dam">Thẻ in đậm: <code class="language-html">&lt;b&gt;&lt;/b&gt;</code> 
+          hoặc <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code></h2>
+  
+          <br>
+  
+        <p>
+          <pre><code class="language-html">&lt;p&gt;&lt;b&gt;Đây là đoạn văn bản sử dụng thẻ b&lt;/b&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Đây là đoạn văn bản sử dụng thẻ strong&lt;/strong&gt;&lt;/p&gt;</code></pre>
+        </p>
+  
+        <br />
+  
+        <h3 class="output">Output:</h3>
+  
+        <img src="/img/the_b_strong_in.png" alt="" class="output" />
+        <br />
+  
+        <p class="the_in_dam">
+          Thẻ <code class="language-html">&lt;b&gt;&lt;/b&gt;</code> 
+          và <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code> trong HTML đều có tác dụng in đậm nội dung của văn bản, 
+          nhưng có sự khác biệt về ý nghĩa và mục đích sử dụng. <br> <br>
+          Thẻ <code class="language-html">&lt;b&gt;&lt;/b&gt;</code> chỉ dùng để làm nổi bật nội dung, không có ý nghĩa ngữ nghĩa, 
+          còn thẻ <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code> dùng để nhấn mạnh mức độ quan trọng của nội dung <br> <br>
+          Thẻ <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code> nên được ưu tiên sử dụng hơn thẻ <code class="language-html">&lt;b&gt;&lt;/b&gt;</code>
+        </p>
+      </div>
+  
+      <br />
+  
+      <!-- Thẻ in nghiêng -->
+      <div class="the_in_nghieng">
+        <h2 id="innghieng" class="the_in_nghieng">
+          Thẻ in nghiêng: <code class="language-html">&lt;i&gt;&lt;/i&gt;</code> hoặc <code class="language-html">&lt;em&gt;&lt;/em&gt;</code>
+        </h2>
+  
+        <br />
+  
+        <p>
+          <pre><code class="language-html">
+  &lt;!--Sử dụng thẻ i hoặc em để in nghiêng--&gt;
+  &lt;p&gt;&lt;i&gt;Đây là đoạn văn bản sử dụng thẻ i&lt;/i&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;Đây là đoạn văn bản sử dụng thẻ em&lt;/em&gt;&lt;/p&gt;
+          </code></pre>
+        </p>
+  
+        <br />
+  
+        <h3 class="output">Output:</h3>
+  
+        <img src="/img/the_i_em_in.png" alt="" class="output" />
+  
+        <br />
+  
+        <p class="the_in_nghieng">
+          Giống như các thẻ in đậm, thẻ <code class="language-html">&lt;i&gt;&lt;/i&gt;</code> và <code class="language-html">&lt;em&gt;&lt;/em&gt;</code> 
+          trong HTML đều có tác dụng in nghiêng nội dung của văn bản, nhưng có sự khác biệt về ý nghĩa và mục đích sử dụng. <br> <br>
+          Thẻ <code class="language-html">&lt;em&gt;&lt;/em&gt;</code> dùng để nhấn mạnh mức độ quan trọng của nội dung, 
+          trong khi thẻ <code class="language-html">&lt;i&gt;&lt;/i&gt;</code> chỉ được dùng để làm nổi bật những phần văn bản có tính ngữ nghĩa.
+        </p>
+      </div>
+  
+      <br />
+  
+      <!-- Thẻ gạch chân -->
+      <div class="the_gach_chan">
+        <h2 id="gachchan" class="the_gach_chan">
+          Thẻ gạch chân <code class="language-html">&lt;u&gt;&lt;/u&gt;</code>
+        </h2>
+  
+        <br />
+  
+        <p>
+          <pre>
+            <code class="language-html">
+  &lt;!--Thẻ u dùng để gạch chân--&gt;
+  &lt;p&gt;&lt;u&gt;Đây là đoạn văn bản sử dụng thẻ u&lt;/u&gt;&lt;/p&gt;</code>
+          </pre>
+        </p>
+  
+        <br />
+  
+        <h3 class="output">Output:</h3>
+  
+        <img src="/img/the_u_in.png" alt="" class="output" />
+        <br />
+  
+        <p class="the_gach_chan">
+          Thẻ <code class="language-html">&lt;u&gt;&lt;/u&gt;</code> trong HTML là thẻ dùng để tạo một đường gạch dưới chân văn bản. <br> <br>
+          Thẻ <code class="language-html">&lt;u&gt;&lt;/u&gt;</code> không có ý nghĩa ngữ nghĩa, mà chỉ dùng để làm nổi bật nội dung
+        </p>
+      </div>
+  
+      <br>
+  
+      <!-- Thẻ div -->
+      <div class="the_div">
+        <h2 class="the_div" id="thediv">Thẻ <code class="language-html">&lt;div&gt;&lt;/div&gt;</code></h2>
+  
+        <br>
+  
+        <p>
+          <pre><code class="language-html">
+  &lt;!--3 thẻ p nằm trong 1 thẻ div--&gt;
+  &lt;div&gt;
+    &lt;p&gt;Thẻ p thứ 1&lt;/p&gt;
+    &lt;p&gt;Thẻ p thứ 2&lt;/p&gt;
+    &lt;p&gt;Thẻ p thứ 3&lt;/p&gt;
+  &lt;/div&gt;
+          </code></pre>
+        </p>
+  
+        <p class="the_div">Thẻ <code class="language-html">&lt;div&gt;&lt;/div&gt;</code> 
+          trong HTML là thẻ dùng để nhóm các phần tử HTML lại với nhau thành một khối, 
+          nó thuộc nhóm thẻ block, nghĩa là nó sẽ tạo một khối riêng biệt trên trang web. <br> <br>
+          Do thẻ <code class="language-html">&lt;div&gt;&lt;/div&gt;</code> không có định dạng mặc định, 
+          nên nó thường được dùng để làm thùng chứa cho các phần tử khác 
+          để định dạng bằng CSS hoặc thao tác bằng JavaScript. Thẻ div có thể chứa bất kỳ nội dung nào, 
+          như văn bản, hình ảnh, liên kết, biểu mẫu, bảng, danh sách, v.v. <br> <br>
+          Thẻ <code class="language-html">&lt;div&gt;&lt;/div&gt;</code> cũng có thể dùng để thiết kế bố cục trang web, 
+          bằng cách tạo các khu vực như header, footer, content, sidebar, v.v.</p>
+      </div>
+    </div>
+      </section> 
+  
+      <br>
+  
+      <section class="id_va_class">
+        <!-- id và class -->
+        <div class="id_va_class" id="idclass">
+  
+          <h2 class="id_va_class">ID và Class</h2>
+  
+          <br>
+  
+          <p class="id_va_class">
+            Id và class là hai thuộc tính quan trọng trong HTML, dùng để đặt tên hoặc phân loại các phần tử HTML để tiện cho việc định dạng bằng CSS hoặc thao tác bằng JavaScript. 
+          </p>
+  
+          <p>
+            <pre>
+              <code class="language-html">
+  &lt;body&gt;
+    &lt;!-- Thẻ h1 mang id tieu_de --&gt;
+    &lt;h1 id = &quot;tieu_de&quot;&gt;Đây là tiêu đề&lt;/h1&gt;
+            
+    &lt;!-- Thẻ div mang class noi_dung_chinh --&gt;
+    &lt;div class=&quot;noi_dung_chinh&quot;&gt;
+      &lt;p class = &quot;noi_dung_chinh&quot;&gt;Nội dung 1&lt;/p&gt;
+      &lt;p class = &quot;noi_dung_chinh&quot;&gt;Nội dung 2&lt;/p&gt;
+      &lt;p class = &quot;noi_dung_chinh&quot;&gt;Nội dung 3&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;</code>
+            </pre>
+          </p>
+  
+          <p class="id_va_class">
+            Id là một chuỗi xác định duy nhất cho một phần tử HTML, không được trùng lặp với id của phần tử khác. <br> <br>
+            Class là một chuỗi xác định một nhóm các phần tử HTML có chung một đặc điểm, có thể được sử dụng cho nhiều phần tử. <br> <br> 
+            Để khai báo id cho một phần tử HTML, ta dùng cú pháp <code class="language-html">id=“tên id”</code>, đối với khai báo class,
+            ta dùng <code class="language-html">class=“tên class”</code> trong thẻ mở của phần tử đó.
+          </p>
+        </div>
+      </section>
+
+
+   <hr>
+
+   <section class="loi_ket">
+    <div class="loi_ket">
+      <h2 class="loi_ket">Lời kết</h2>
+
+      <p class="loi_ket">Thế là chúng ta đã tìm hiểu hết tất cả kiến thức cơ bản của HTML, mình mong các bạn đã nắm rõ về HTML, 
+        vai trò của HTML trong lập trình web, hiểu rõ về cách HTML hoạt động. <br><br>
+        Mình chúc các bạn sẽ ngày một thành công trên con đường trở thành Web Dev của mình!
+      </p>
+      </h2>
+    </div>
+   </section>
+
+  </main>
+
+  <!--highlight dòng code-->
+    <div>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+   </div>
+  </body>
+</html>
